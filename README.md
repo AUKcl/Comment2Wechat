@@ -7,7 +7,7 @@
 1. 当评论者为自己时不提醒
 1. 使用 HTTPS 与 Server酱 进行通信
 
-![Comment2Wechat](https://lolico.moe/usr/uploads/2017/10/1645816248.png)
+![Comment2Wechat](https://moe.best/usr/uploads/2017/10/1645816248.png)
 
 ## 下载
 - [从 Github 下载](https://github.com/YKilin/Comment2Wechat/archive/master.zip "从 Github 下载")
@@ -24,7 +24,7 @@
 然后将你获取的 SCKEY 粘贴到插件的设置中，保存设置。    
 就这么简单。
 
-![ftqq](https://lolico.moe/usr/uploads/2017/10/3737715179.jpg)
+![ftqq](https://moe.best/usr/uploads/2017/10/3737715179.jpg)
 
 ## 原作
 Comment2Wechat V1.0.0 by [Y!an](https://yian.me "Y!an")
