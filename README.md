@@ -31,8 +31,8 @@ Comment2Wechat V2.0 by [神代綺凛](https://moe.best/ "神代綺凛")
 https://github.com/Tsuk1ko/Comment2Wechat
 
 ## 感谢
-此插件的微信推送采用了 [@Easy](https://www.weibo.com/easy) 的 [Server酱](https://sct.ftqq.com/) 解决方案
-Comment2Wechat V1.0 by [Y!an](https://yian.me "Y!an")
-Comment2Wechat V2.0 by [神代綺凛](https://moe.best/ "神代綺凛")
+- 此插件的微信推送采用了 [@Easy](https://www.weibo.com/easy) 的 [Server酱](https://sct.ftqq.com/) 解决方案
+- Comment2Wechat V1.0 by [Y!an](https://yian.me "Y!an")
+- Comment2Wechat V2.0 by [神代綺凛](https://moe.best/ "神代綺凛")
 
 感谢以上三位大佬！
