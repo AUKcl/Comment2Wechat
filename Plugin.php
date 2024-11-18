@@ -1,11 +1,11 @@
 <?php
 /**
- * 微信推送评论通知（原作者：<a href="https://yian.me">Y!an</a>）
+ * 微信推送评论通知（原作者：<a href="https://moe.best/">神代綺凛</a>）
  * 
  * @package Comment2Wechat
- * @author 神代綺凜
- * @version 2.0
- * @link https://lolico.moe
+ * @author AUKCL
+ * @version 3.0
+ * @link https://aukcl.win/
  */
 class Comment2Wechat_Plugin implements Typecho_Plugin_Interface
 {
@@ -45,7 +45,7 @@ class Comment2Wechat_Plugin implements Typecho_Plugin_Interface
      */
     public static function config(Typecho_Widget_Helper_Form $form)
     {
-        $key = new Typecho_Widget_Helper_Form_Element_Text('sckey', NULL, NULL, _t('SCKEY'), _t('想要获取 SCKEY 则需要在 <a href="https://sc.ftqq.com/">Server酱</a> 使用 Github 账户登录<br>同时，注册后需要在 <a href="http://sc.ftqq.com/">Server酱</a> 绑定你的微信号才能收到推送'));
+        $key = new Typecho_Widget_Helper_Form_Element_Text('sckey', NULL, NULL, _t('SCKEY'), _t('想要获取 SCKEY 则需要在 <a href="https://sct.ftqq.com/">Server酱</a> 使用 Github 账户登录<br>同时，注册后需要在 <a href="http://sct.ftqq.com/">Server酱</a> 绑定你的微信号才能收到推送'));
         $form->addInput($key->addRule('required', _t('您必须填写一个正确的 SCKEY')));
         
         $notMyself = new Typecho_Widget_Helper_Form_Element_Radio('notMyself',
@@ -60,7 +60,7 @@ class Comment2Wechat_Plugin implements Typecho_Plugin_Interface
                 '1' => '是',
                 '0' => '否'
             ),'1', _t('使用 HTTPS 提交微信推送请求'), _t('Server酱已支持 HTTPS，启用后将使用 HTTPS 提交微信推送请求，更安全<br><br><br>
-            此插件由原作者 <a href="https://yian.me">Y!an</a> 的 <a href="https://github.com/YianAndCode/Comment2Wechat">Comment2Wechat 1.0.0</a> 插件修改而来<br>本插件项目地址：<a href="https://github.com/YKilin/Comment2Wechat">https://github.com/YKilin/Comment2Wechat</a>'));
+            此插件由原作者 <a href="https://moe.best/">神代綺凛</a> 的 <a href="https://github.com/Tsuk1ko/Comment2Wechat">Comment2Wechat 2.0</a> 插件修改而来<br>本插件项目地址：<a href="https://github.com/AUKcl/Comment2Wechat">https://github.com/AUKcl/Comment2Wechat</a>'));
         $form->addInput($enableHttps);
     }
     
@@ -124,9 +124,9 @@ class Comment2Wechat_Plugin implements Typecho_Plugin_Interface
             );
         }
         
-        $ftqq = "http://sc.ftqq.com/";
+        $ftqq = "http://sctapi.ftqq.com/";
         if($enableHttps == '1'){
-            $ftqq = "https://sc.ftqq.com/";
+            $ftqq = "https://sctapi.ftqq.com/";
         }
         
         $context  = stream_context_create($opts);
